@@ -1,5 +1,77 @@
 ## Changelog
 
+### V0.12 (04/03/2021)
+
+**Highlights**
+
+- Support FCN-Dilate 6 model.
+- Support Dice Loss.
+
+**Bug Fixes**
+
+- Fixed PhotoMetricDistortion Doc ([#388](https://github.com/open-mmlab/mmsegmentation/pull/388))
+- Fixed install scripts ([#399](https://github.com/open-mmlab/mmsegmentation/pull/399))
+- Fixed Dice Loss multi-class ([#417](https://github.com/open-mmlab/mmsegmentation/pull/417))
+
+**New Features**
+
+- Support Dice Loss ([#396](https://github.com/open-mmlab/mmsegmentation/pull/396))
+- Add plot logs tool ([#426](https://github.com/open-mmlab/mmsegmentation/pull/426))
+- Add opacity option to show_result ([#425](https://github.com/open-mmlab/mmsegmentation/pull/425))
+- Speed up mIoU metric ([#430](https://github.com/open-mmlab/mmsegmentation/pull/430))
+
+**Improvements**
+
+- Refactor unittest file structure ([#440](https://github.com/open-mmlab/mmsegmentation/pull/440))
+- Fix typos in the repo ([#449](https://github.com/open-mmlab/mmsegmentation/pull/449))
+- Include class-level metrics in the log ([#445](https://github.com/open-mmlab/mmsegmentation/pull/445))
+
+### V0.11 (02/02/2021)
+
+**Highlights**
+
+- Support memory efficient test, add more UNet models.
+
+**Bug Fixes**
+
+- Fixed TTA resize scale ([#334](https://github.com/open-mmlab/mmsegmentation/pull/334))
+- Fixed CI for pip 20.3 ([#307](https://github.com/open-mmlab/mmsegmentation/pull/307))
+- Fixed ADE20k test ([#359](https://github.com/open-mmlab/mmsegmentation/pull/359))
+
+**New Features**
+
+- Support memory efficient test ([#330](https://github.com/open-mmlab/mmsegmentation/pull/330))
+- Add more UNet benchmarks ([#324](https://github.com/open-mmlab/mmsegmentation/pull/324))
+- Support Lovasz Loss ([#351](https://github.com/open-mmlab/mmsegmentation/pull/351))
+
+**Improvements**
+
+- Move train_cfg/test_cfg inside model ([#341](https://github.com/open-mmlab/mmsegmentation/pull/341))
+
+### V0.10 (01/01/2021)
+
+**Highlights**
+
+- Support MobileNetV3, DMNet, APCNet. Add models of ResNet18V1b, ResNet18V1c, ResNet50V1b.
+
+**Bug Fixes**
+
+- Fixed CPU TTA ([#276](https://github.com/open-mmlab/mmsegmentation/pull/276))
+- Fixed CI for pip 20.3 ([#307](https://github.com/open-mmlab/mmsegmentation/pull/307))
+
+**New Features**
+
+- Add ResNet18V1b, ResNet18V1c, ResNet50V1b, ResNet101V1b models ([#316](https://github.com/open-mmlab/mmsegmentation/pull/316))
+- Support MobileNetV3 ([#268](https://github.com/open-mmlab/mmsegmentation/pull/268))
+- Add 4 retinal vessel segmentation benchmark  ([#315](https://github.com/open-mmlab/mmsegmentation/pull/315))
+- Support DMNet ([#313](https://github.com/open-mmlab/mmsegmentation/pull/313))
+- Support APCNet ([#299](https://github.com/open-mmlab/mmsegmentation/pull/299))
+
+**Improvements**
+
+- Refactor Documentation page ([#311](https://github.com/open-mmlab/mmsegmentation/pull/311))
+- Support resize data augmentation according to original image size ([#291](https://github.com/open-mmlab/mmsegmentation/pull/291))
+
 ### V0.9 (30/11/2020)
 
 **Highlights**

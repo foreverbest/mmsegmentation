@@ -1,0 +1,9 @@
+_background_
+bike
+buliding
+people
+road
+sign
+sky
+vegetation
+vehicle

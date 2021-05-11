@@ -23,6 +23,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.pth
+checkpoints/
+data/
 MANIFEST
 
 # PyInstaller

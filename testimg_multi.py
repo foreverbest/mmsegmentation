@@ -3,14 +3,14 @@ import mmcv
 import os
 import numpy as np
 
-config_file = 'mmsegmentation/configs/ocrnet/ocrnet_hr18_512x1024_20k_l430sv.py'
-checkpoint_file = 'mmsegmentation/work_dirs/ocrnet_hr18_512x1024_20k_l430sv_40/latest.pth'
+config_file = 'configs/ocrnet/ocrnet_hr18_512x1024_20k_l430sv.py'
+checkpoint_file = 'work_dirs/ocrnet_hr18_512x1024_20k_l430sv_40/latest.pth'
 
 # build the model from a config file and a checkpoint file
 model = init_segmentor(config_file, checkpoint_file, device='cuda:0')
 
-path='origin/sse-images/'
-outpath='mmsegmentation/testdata/ocrnet_hr18_40_exp/'
+path='data/l430sv/images/val'
+outpath='testdata/test/'
 imglist = os.listdir(path)
 # test images and show the results
 

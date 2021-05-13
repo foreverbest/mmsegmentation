@@ -9,7 +9,7 @@ checkpoint_file = 'work_dirs/ocrnet_hr18_512x1024_20k_l430sv_40/latest.pth'
 # build the model from a config file and a checkpoint file
 model = init_segmentor(config_file, checkpoint_file, device='cuda:0')
 
-path='data/l430sv/images/val'
+path='data/l430sv/images/val/'
 outpath='testdata/test/'
 imglist = os.listdir(path)
 # test images and show the results

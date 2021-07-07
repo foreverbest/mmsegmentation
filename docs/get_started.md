@@ -7,6 +7,23 @@
 - GCC 5+
 - [MMCV](https://mmcv.readthedocs.io/en/latest/#installation)
 
+The compatible MMSegmentation and MMCV versions are as below. Please install the correct version of MMCV to avoid installation issues.
+
+| MMSegmentation version |    MMCV version     |
+|:-------------------:|:-------------------:|
+| master              | mmcv-full>=1.3.7, <1.4.0 |
+| 0.15.0              | mmcv-full>=1.3.7, <1.4.0 |
+| 0.14.1              | mmcv-full>=1.3.7, <1.4.0 |
+| 0.14.0              | mmcv-full>=1.3.1, <1.3.2 |
+| 0.13.0              | mmcv-full>=1.3.1, <1.3.2 |
+| 0.12.0              | mmcv-full>=1.1.4, <1.3.2 |
+| 0.11.0              | mmcv-full>=1.1.4, <1.3.0 |
+| 0.10.0              | mmcv-full>=1.1.4, <1.3.0 |
+| 0.9.0               | mmcv-full>=1.1.4, <1.3.0 |
+| 0.8.0               | mmcv-full>=1.1.4, <1.2.0 |
+| 0.7.0               | mmcv-full>=1.1.2, <1.2.0 |
+| 0.6.0               | mmcv-full>=1.1.2, <1.2.0 |
+
 Note: You need to run `pip uninstall mmcv` first if you have mmcv installed.
 If mmcv and mmcv-full are both installed, there will be `ModuleNotFoundError`.
 
@@ -32,10 +49,10 @@ Either `mmcv` or `mmcv-full` is compatible with MMSegmentation, but for methods 
 
 **Install mmcv for Linux:**
 
-The pre-build mmcv-full (with PyTorch 1.5 and CUDA 10.1) can be installed by running: (other available versions could be found [here](https://mmcv.readthedocs.io/en/latest/#install-with-pip))
+The pre-build mmcv-full (with PyTorch 1.6 and CUDA 10.1) can be installed by running: (other available versions could be found [here](https://mmcv.readthedocs.io/en/latest/#install-with-pip))
 
 ```shell
-pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.5.0/index.html
+pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.6.0/index.html
 ```
 
 **Install mmcv for Windows (Experimental):**
@@ -107,7 +124,7 @@ conda create -n open-mmlab python=3.7 -y
 conda activate open-mmlab
 
 conda install pytorch=1.6.0 torchvision cudatoolkit=10.1 -c pytorch
-pip install mmcv-full==latest+torch1.5.0+cu101 -f https://download.openmmlab.com/mmcv/dist/index.html
+pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.6.0/index.html
 git clone https://github.com/open-mmlab/mmsegmentation.git
 cd mmsegmentation
 pip install -e .  # or "python setup.py develop"
@@ -148,7 +165,7 @@ PYTHONPATH="$(dirname $0)/..":$PYTHONPATH
 
 ## Verification
 
-To verify whether MMSegmentation and the required environment are installed correctly, we can run sample python codes to initialize a detector and inference a demo image:
+To verify whether MMSegmentation and the required environment are installed correctly, we can run sample python codes to initialize a segmentor and inference a demo image:
 
 ```python
 from mmseg.apis import inference_segmentor, init_segmentor

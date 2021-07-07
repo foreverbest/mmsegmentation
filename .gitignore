@@ -117,3 +117,18 @@ work_dirs/
 
 # Pytorch
 *.pth
+testdata/test/116.402584,39.941896900.1.jpg
+testdata/test/116.402594,39.941686902.1.jpg
+testdata/test/116.402624,39.94116600.0.jpg
+testdata/test/116.403134,39.9430281800.2.jpg
+testdata/test/116.403414,39.942989901.1.jpg
+testdata/test/116.403414,39.9429891801.2.jpg
+testdata/test/116.403414,39.9429892701.3.jpg
+testdata/test/116.403624,39.9429600.0.jpg
+testdata/test/116.405612,39.9427231800.2.jpg
+testdata/test/116.406662,39.9426932701.3.jpg
+testdata/test/116.406972,39.94268302.0.jpg
+testdata/test/116.407302,39.9426831800.2.jpg
+testdata/test/116.408903,39.942652700.3.jpg
+testdata/test/116.409504,39.9426381803.2.jpg
+testdata/test/116.409724,39.94264800.0.jpg
